@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 데모 페이지</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f5f6fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #4078c0;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #2d3e50;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        footer {
+            background: #4078c0;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            background: #4078c0;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #305080;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 데모 페이지</h1>
+        <p>HTML5, CSS3, JavaScript 예제</p>
+    </header>
+    <nav>
+        <a href="#intro">소개</a>
+        <a href="#features">특징</a>
+        <a href="#event">이벤트</a>
+    </nav>
+    <main>
+        <section id="intro">
+            <h2>HTML5란?</h2>
+            <p>
+                HTML5는 웹 페이지를 만들기 위한 최신 표준 마크업 언어입니다.<br>
+                다양한 멀티미디어 요소와 시맨틱 태그를 지원합니다.
+            </p>
+        </section>
+        <section id="features">
+            <h2>주요 특징</h2>
+            <ul>
+                <li>&lt;header&gt;, &lt;nav&gt;, &lt;section&gt;, &lt;footer&gt; 등 시맨틱 태그</li>
+                <li>비디오, 오디오 등 멀티미디어 지원</li>
+                <li>폼 입력 타입 다양화</li>
+                <li>CSS3와의 강력한 연동</li>
+            </ul>
+        </section>
+        <section id="event">
+            <h2>간단한 자바스크립트 예제</h2>
+            <button id="greetBtn">인사하기</button>
+            <p id="greetMsg"></p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 HTML5 데모 페이지
+    </footer>
+    <script>
+        document.getElementById('greetBtn').addEventListener('click', function() {
+            document.getElementById('greetMsg').textContent = '안녕하세요! HTML5와 함께하세요 😊';
+        });
